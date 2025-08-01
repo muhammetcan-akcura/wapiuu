@@ -53,20 +53,41 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-slate-200">
             <nav className="flex flex-col space-y-4">
-              <a href="#features" className="text-slate-600 hover:text-slate-900">
+              <a
+                href="#features"
+                className="text-slate-600 hover:text-slate-900"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Features
               </a>
-              <a href="#pricing" className="text-slate-600 hover:text-slate-900">
+              <a
+                href="#pricing"
+                className="text-slate-600 hover:text-slate-900"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Pricing
               </a>
-              <a href="#customer-reviews" className="text-slate-600 hover:text-slate-900">
+              <a
+                href="#customer-reviews"
+                className="text-slate-600 hover:text-slate-900"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Customer Reviews
               </a>
-              <a href="#support" className="text-slate-600 hover:text-slate-900">
+              <a
+                href="#support"
+                className="text-slate-600 hover:text-slate-900"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Support
               </a>
               <div className="pt-4 border-t border-slate-200">
-                <Button className="w-full bg-telegram-blue-600 hover:bg-telegram-blue-700 text-white">Free Demo</Button>
+                <Button
+                  className="w-full bg-telegram-blue-600 hover:bg-telegram-blue-700 text-white"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Free Demo
+                </Button>
               </div>
             </nav>
           </div>

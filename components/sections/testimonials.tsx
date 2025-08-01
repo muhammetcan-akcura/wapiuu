@@ -63,7 +63,7 @@ export default function Testimonials() {
                 ))}
               </div>
 
-              <p className="text-slate-700 mb-6 leading-relaxed">"{testimonial.text}"</p>
+              <p className="text-slate-700 mb-6 leading-relaxed">&quot;{testimonial.text}&quot;</p>
 
               <div className="flex items-center space-x-4">
                 <img
